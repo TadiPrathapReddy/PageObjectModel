@@ -27,18 +27,18 @@ public class LoginPageTest extends TestBase {
 		
 	}
 	
-	@Test()
+	@Test(priority=1)
 	public void LoginPageTitleTest() {
 		String title = login.validateLoginPageTitle();
 		Assert.assertEquals(title, "Free CRM - CRM software for customer relationship management, sales, and support.");
 	}
 	
-	@Test()
+	@Test(priority=2)
 	public void crmLoginTest() {
 		boolean flag =login.ValidateCRMImage();
 		Assert.assertTrue(flag);
 	}
-	@Test()
+	@Test(priority=3)
 	public void LoginTest() throws InterruptedException {
 		homepage =login.Login();
 	}
