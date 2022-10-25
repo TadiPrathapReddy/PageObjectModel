@@ -20,9 +20,10 @@ public class HomePage extends TestBase {
 			PageFactory.initElements(driver, this);
 		}
 		//Action
-		public boolean validateHomePageTitle() {
+		public void validateHomePageTitle() {
+			HomeTab.click();
 			System.out.println("Home page Tab is displyed");
-			return HomeTab.isDisplayed();
+			
 			
 		}
 		
