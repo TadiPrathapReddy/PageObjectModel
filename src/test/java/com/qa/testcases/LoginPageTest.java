@@ -41,6 +41,7 @@ public class LoginPageTest extends TestBase {
 	@Test(priority=3)
 	public void LoginTest() throws InterruptedException {
 		homepage =login.Login();
+		homepage.validateHomePageTitle();
 	}
 	
 	@AfterMethod
