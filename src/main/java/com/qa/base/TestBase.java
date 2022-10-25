@@ -41,10 +41,7 @@ public class TestBase {
 		String browsername = prop.getProperty("browser");
 		if(browsername.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C://Users//prathap.tadi//eclipse-workspace//PageTest//Lib//chromedriver.exe");
-			/*
-			 * System.setProperty("webdriver.chrome.driver",
-			 * "D:\\ChromeDriver\\chromedriver.exe");
-			 */			driver = new ChromeDriver();
+			driver = new ChromeDriver();
 		}
 		
 		driver.manage().window().maximize();
